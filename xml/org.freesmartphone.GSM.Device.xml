@@ -20,6 +20,7 @@
     </method>
     <method name="GetFeatures">
       <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/> 
       <arg type="a{sv}" name="features" direction="out"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone.GSM"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone"/>

@@ -92,6 +92,7 @@
 
   <method name="GetFeatures">
     <annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+    <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/> 
     <doc:doc>
       <doc:description>Get information about the telephony features supported by this device.</doc:description>
     </doc:doc>
