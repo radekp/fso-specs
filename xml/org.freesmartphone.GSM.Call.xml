@@ -9,6 +9,7 @@
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone"/>
     </method>
     <signal name="CallStatus">
+      <annotation name="com.trolltech.QtDBus.QtTypeName.In2" value="QVariantMap"/>
       <arg type="i" name="id"/>
       <arg xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="s" name="status" fso:type="org.freesmartphone.GSM.CallStatus"/>
       <arg type="a{sv}" name="properties"/>
@@ -67,6 +68,7 @@
     </method>
     <method name="ListCalls">
       <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="OrgFreesmartphoneGSMCallDetailList"/>
       <arg xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="a(isa{sv})" name="call_details" direction="out" fso:type="org.freesmartphone.GSM.CallDetail"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone.GSM"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone"/>

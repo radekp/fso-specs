@@ -43,6 +43,7 @@
 
   <method name="GetStatus">
     <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+    <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
     <doc:doc>
       <doc:description>Get Network Status.</doc:description>
     </doc:doc>
@@ -105,6 +106,7 @@
   </method>
 
   <signal name="Status">
+    <annotation name="com.trolltech.QtDBus.QtTypeName.In0" value="QVariantMap"/>
     <doc:doc>
       <doc:description>
         Sent, when the network registration status changes.
@@ -212,6 +214,7 @@
 
   <method name="ListProviders">
     <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+    <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="OrgFreesmartphoneGSMNetworkProviderList"/>
       <doc:doc>
         <doc:description>List available service providers.</doc:description>
       </doc:doc>
@@ -249,6 +252,7 @@
 
   <method name="GetCallForwarding">
     <annotation name="org.freedesktop.DBus.GLib.Async" value="true" />
+    <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
     <doc:doc>
       <doc:description>Get the network call forwarding status.</doc:description>
     </doc:doc>

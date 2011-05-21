@@ -14,11 +14,13 @@
     </method>
     <method name="GetStatus">
       <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
       <arg type="a{sv}" name="status" direction="out"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone.GSM"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone"/>
     </method>
     <signal name="Status">
+      <annotation name="com.trolltech.QtDBus.QtTypeName.In0" value="QVariantMap"/>
       <arg type="a{sv}" name="status"/>
     </signal>
     <method name="GetSignalStrength">
@@ -45,6 +47,7 @@
     </signal>
     <method name="ListProviders">
       <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="OrgFreesmartphoneGSMNetworkProviderList"/>
       <arg xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="a(sssss)" name="providers" direction="out" fso:type="org.freesmartphone.GSM.NetworkProvider"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone.GSM"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone"/>
@@ -57,6 +60,7 @@
     </method>
     <method name="GetCallForwarding">
       <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <annotation name="com.trolltech.QtDBus.QtTypeName.Out0" value="QVariantMap"/>
       <arg type="s" name="reason" direction="in"/>
       <arg type="a{sv}" name="status" direction="out"/>
       <fso:throws xmlns:fso="http://www.freesmartphone.org/schemas/DBusSpecExtension" type="org.freesmartphone.GSM"/>
